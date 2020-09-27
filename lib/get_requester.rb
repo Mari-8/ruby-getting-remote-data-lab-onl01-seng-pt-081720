@@ -5,11 +5,11 @@ require 'open-uri'
 class GetRequester 
   
   def intitialize(url)
-    @url = url 
+    URI = url 
   end 
   
   def get_response_body 
-    uri = URI.parse(@url) 
+    uri = URI.parse
     response = Net::HTTP.get_resonse(uri) 
     response.body 
   end 
