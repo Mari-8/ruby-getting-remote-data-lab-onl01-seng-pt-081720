@@ -13,4 +13,6 @@ class GetRequester
     response = Net::HTTP.get_resonse(uri) 
     response.body 
   end 
+  
+  
 end 
