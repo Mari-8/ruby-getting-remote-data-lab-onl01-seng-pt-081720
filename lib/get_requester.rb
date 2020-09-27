@@ -6,7 +6,7 @@ class GetRequester
   
   attr_accessor :url 
   
-  def intitialize(url)
+  def initialize(url)
      @url = url 
   end 
   
@@ -17,6 +17,7 @@ class GetRequester
     response = Net::HTTP.get_resonse 
     response.body 
   end 
+  
   
   
 end 
