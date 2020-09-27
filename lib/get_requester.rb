@@ -1,5 +1,5 @@
 require 'pry'
-require 'net/htpp'
+require 'net/http'
 require 'open-uri'
 
 class GetRequester 
