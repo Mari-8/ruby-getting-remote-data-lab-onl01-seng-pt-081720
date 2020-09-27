@@ -4,13 +4,17 @@ require 'open-uri'
 
 class GetRequester 
   
+  attr_accessor :url 
+  
   def intitialize(url)
-    @URI = url 
+     @url = url 
   end 
   
+  URL = @url 
+  
   def get_response_body 
-    uri = @URI.parse
-    response = Net::HTTP.get_resonse(uri) 
+    uri = URI.parse
+    response = Net::HTTP.get_resonse(URL) 
     response.body 
   end 
   
